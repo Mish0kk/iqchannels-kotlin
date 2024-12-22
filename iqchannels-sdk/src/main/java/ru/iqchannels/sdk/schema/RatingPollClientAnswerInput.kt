@@ -1,5 +1,7 @@
 package ru.iqchannels.sdk.schema
 
+import com.google.gson.Gson
+
 class RatingPollClientAnswerInput {
 	var ProjectId: Long = 0
 	var ClientId: Long = 0
@@ -37,5 +39,9 @@ class RatingPollClientAnswerInput {
 		AnswerScale = scaleValue
 		FCR = fcr
 		AsTicketRating = asTicketRating
+	}
+
+	override fun toString(): String {
+		return Gson().toJson(this)
 	}
 }
