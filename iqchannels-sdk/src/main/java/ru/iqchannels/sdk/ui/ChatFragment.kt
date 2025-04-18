@@ -260,6 +260,13 @@ class ChatFragment : Fragment() {
 						} else {
 							val ctx = context
 
+							val mimeType = context?.contentResolver?.getType(uri)
+							if (mimeType != null && mimeType.startsWith("image/")) {
+								clFile?.imageView?.imageTintList = null
+								clFile?.imageView?.scaleType = ImageView.ScaleType.CENTER_CROP
+								clFile?.imageView?.setImageURI(uri)
+							}
+
 							val checkedFile = if (ctx != null) {
 								FileConfigChecker.checkFiles(ctx, listOf(uri), childFragmentManager).firstOrNull()
 							} else {
