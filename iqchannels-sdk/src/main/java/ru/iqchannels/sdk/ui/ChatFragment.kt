@@ -704,7 +704,7 @@ class ChatFragment : Fragment() {
 
 				val message = when (e) {
 					is UnknownHostException -> {
-						getString(R.string.check_connection)
+						getString(R.string.chat_unavailable_description)
 					}
 
 					is SocketTimeoutException, is TimeoutException -> {
@@ -1031,12 +1031,12 @@ class ChatFragment : Fragment() {
 				errMessage = if (exception.code == 413) {
 					getString(R.string.file_size_too_large)
 				} else {
-					getString(R.string.check_connection)
+					getString(R.string.chat_unavailable_description)
 				}
 			}
 
 			is UnknownHostException -> {
-				errMessage = getString(R.string.check_connection)
+				errMessage = getString(R.string.chat_unavailable_description)
 			}
 
 			is SocketTimeoutException, is TimeoutException, is java.net.SocketException -> {
