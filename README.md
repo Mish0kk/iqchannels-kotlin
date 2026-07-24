@@ -48,11 +48,11 @@ allprojects {
 }
 ```
 
-5. Добавьте зависимосить `implementation 'ru.iqstore:iqchannels-sdk-2:2.3.6'` в `build.gradle` модуля приложения.
+5. Добавьте зависимосить `implementation 'ru.iqstore:iqchannels-sdk-2:2.3.7'` в `build.gradle` модуля приложения.
 ```build.gradle
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])   
-    implementation 'ru.iqstore:iqchannels-sdk-2:2.3.6'
+    implementation 'ru.iqstore:iqchannels-sdk-2:2.3.7'
     // etc...
 }
 ```
@@ -558,10 +558,14 @@ ChatFragment принимает предзаполненная сообщени�
       }
     }
   },
-  "app_bar": {                 //Верхняя панель (Только iOS)
+  "app_bar": {                 //Верхняя панель
     "background": {           //Фон панели
       "light": "#FFFFFF",
       "dark": "#FFFFE0"
+    },
+    "back_button": {          // Цвет иконки "Назад"
+      "light": "#000000",
+      "dark": "#ffffff"
     },
     "status_label": {         //Текст статуса 
       "color": {

@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName
 import ru.iqchannels.sdk.styling.answer.AnswerStyles
 import ru.iqchannels.sdk.styling.buttons.SingleChoiceBtnStyles
 import ru.iqchannels.sdk.styling.chat.ChatStyles
+import ru.iqchannels.sdk.styling.chat.AppBarStyle
 import ru.iqchannels.sdk.styling.chat.SignupStyles
 import ru.iqchannels.sdk.styling.error.ErrorStyles
 import ru.iqchannels.sdk.styling.messages.ChangeSegmentStyles
@@ -13,6 +14,8 @@ import ru.iqchannels.sdk.styling.messages.RatingStyles
 import ru.iqchannels.sdk.styling.sending.ToolsToMessage
 
 class IQChannelsStyles(
+	@SerializedName("app_bar")
+	val appBar: AppBarStyle?,
 	val signup: SignupStyles?,
 	val chat: ChatStyles?,
 	val messages: MessagesStyles?,
