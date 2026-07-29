@@ -592,6 +592,41 @@ ChatFragment принимает предзаполненная сообщени�
       }
     }
   },
+  "multi_chat": {             //Экран со списком чатов
+    "background": {           //Фон
+      "light": "#FFFFFF",
+      "dark": "#FFFFE0"
+    },
+    "icon_regular_chat": "https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-logotip-cheloveka-na-prozrachnom-fone-4.png", //Иконка общего чата
+    "icon_personal_manager_chat": "https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-logotip-cheloveka-na-prozrachnom-fone-4.png", //Иконка чата с персональным менеджером
+    "icon_info_chat": "https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-logotip-cheloveka-na-prozrachnom-fone-4.png", //Иконка информационного чата
+    "background_icon": {      //Фон иконки
+      "light": "#000000",
+      "dark": "#ffffff"
+    },
+    "title": {                //Заголовок чата 
+      "color": {
+        "light": "#888888",
+        "dark": "#888888"
+      },
+      "text_size": 10,
+      "text_style": {
+        "bold": false,
+        "italic": false
+      }
+    },
+    "last_message": {          //Последнее сообщение
+      "color": {
+        "light": "#888888",
+        "dark": "#888888"
+      },
+      "text_size": 10,
+      "text_style": {
+        "bold": false,
+        "italic": false
+      }
+    }
+  },
   "chat": {                   //Общий чат:
     "background": {           //Фон чата
       "light": "#FFFFFF",
